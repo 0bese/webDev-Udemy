@@ -5,3 +5,12 @@
 .nav-link {
     color: black;
 }
+
+.nav-underline .nav-link:hover {
+    color: grey;
+}
+
+.bi {
+    fill: rgba(33, 37, 41, 0.75);
+}
+/* rgba(33, 37, 41, 0.75) */
