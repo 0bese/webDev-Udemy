@@ -70,10 +70,20 @@ function checkAnswer(currentLevel) {
         }
     }
     else {
+        $('body').addClass('game-over');
+        playSound('wrong');
         setTimeout(function(){
-        $(body).addClass()
-        }
-        )
+            $('h1').html ('Game Over, Press Any Key to Restart');
+            $('body').removeClass('game-over');
+        }, 200
+        );
+        startOver();
     }
 }
 
+
+function startOver(){
+    level = 0;
+    gamePattern = [];
+    started = false;
+}
