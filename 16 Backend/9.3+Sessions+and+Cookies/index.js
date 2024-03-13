@@ -122,7 +122,7 @@ passport.use(
             } else {
               return cb(null, false);
             }
-          }
+          } 
         });
       } else {
         return cb("User not found, try registering");
